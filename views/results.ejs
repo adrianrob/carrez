@@ -1,0 +1,96 @@
+<html>
+    <head>
+        <title>Le Bon Prix -- IMMOBILIER</title>
+        <link href="http://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.1/css/materialize.min.css">
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.5/js/materialize.min.js"></script>
+    </head>
+    <body>
+      <style>
+      body
+      {
+        background-image: url('images/back.jpg');
+        background-repeat: no-repeat;
+      }
+      .card
+      {
+        padding: 30px;
+        margin: 50px;
+      }
+
+      .divider
+      {
+        border-style:solid;
+        border-color : rgb(38,166,154);
+        font-weight: bolder;
+      }
+
+      li
+      {
+        font-size: 25px;
+
+      }
+      .container
+      {
+        text-align:center;
+        margin-top: 100px;
+      }
+      .resdiv
+      {
+        width:458px ;
+        height:360px;
+        padding : 30px;
+        background-color:rgb(38,166,154);
+      }
+      </style>
+      <div class="container row">
+      <div class="col l6">
+        <div class="card">
+          <div class="card-image">
+            <img src="<%=mydata.urlimg%>"/>
+            <span class="card-title"></span>
+          </div>
+          <div class="card-content">
+            <h5><%=mydata.title%></h5>
+              <div class="divider"></div>
+              <ul>
+                <li>type : <%=mydata.type%></li>
+                <li><%=mydata.price%> euros</li>
+                <li><%=mydata.surface%> meter square</li>
+                <li><%=mydata.coutm2%> euros per meter square</li>
+                <li><%=mydata.rooms%> rooms</li>
+                <li><%=mydata.city%></li>
+              </ul>
+          </div>
+        </div>
+        </div>
+        <div class="col l6">
+          <div class="card">
+            <div class="card-image">
+              <div class="resdiv">
+                <img src="images/baro<%=mydata.bilan%>.png">
+              </div>
+              <span class="card-title"></span>
+            </div>
+            <div class="card-content">
+              <h5><%=mydata.city%></h5>
+                <div class="divider"></div>
+                <ul class="row">
+                  <li class="col l4">Low</li>
+                  <li class="col l4">Mean</li>
+                  <li class="col l4">High</li>
+                  <li class="col l4"><%=mydata.pricelow%></li>
+                  <li class="col l4"><%=mydata.pricemedium%></li>
+                  <li class="col l4"><%=mydata.pricehigh%></li>
+                </ul>
+                <ul >
+                  <li> offer : <%=mydata.coutm2%> </li>
+                  <li>data from meilleursagents.com</li>
+                  <li>author Adrian ROBERT</li>
+                </ul>
+            </div>
+          </div>
+          </div>
+        </div>
+    </body>
+</html>

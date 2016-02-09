@@ -1,0 +1,14 @@
+{
+    "name" : "immoscrap",
+    "version":"0.1.0",
+    "description":"scrap leboncoin site",
+    "author":"Adrian <adrian.1@live.fr>",
+    "dependencies":{
+      "express":"latest",
+      "body-parser":"latest",
+      "ejs":"latest",
+      "cookie-session":"latest",
+      "scrap":"latest",
+      "request":"latest"
+    }
+}

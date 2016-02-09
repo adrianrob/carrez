@@ -1,0 +1,6 @@
+1. Get url1(leboncoin) from user
+2. Scrap url1 & build json1
+3. Get url2(meilleursagents) from json1
+4. Scrap url2 & get json2
+5. Compute from json1 & json2
+6. Show results
